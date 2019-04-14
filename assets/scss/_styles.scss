@@ -1,6 +1,133 @@
 
 
 
+/* Footer Styels */
+
+.site-footer {
+    
+}
+
+.container-footer {
+    position: relative;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.top-footer {
+    background-image:url('../images/footer-bg.png');
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: relative;
+    padding: 75px 0 65px;
+    &:before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($sitePurple,.95);
+        display: block;
+        left:0;
+        top:0;
+        content:"";
+    }
+    
+}
+
+.foot-title {
+    color:white;
+    margin-bottom: 35px;
+}
+ 
+.foot-social {
+    overflow: hidden;
+    li {
+        display: block;
+        padding-right: 25px;
+        float: left;
+        a {
+            width: 35px;
+            height: 35px;
+            border-radius:100%;
+            border:1px solid $brandColor;
+            text-align:center;
+            font-size: 18px;
+            display: block;
+            color: $brandColor;
+            line-height: 35px;
+            transition:all .3s;
+            &:hover {
+                color:white;
+                background-color: $brandColor;
+            }
+        }
+    }
+
+
+}
+
+
+.foot-links {
+    li {
+        margin-bottom: 5px;
+    }
+    a {
+        font-family: $secondaryFont;
+        text-decoration: none;
+        color:white;
+        transition:all .3s;
+        &:hover {
+            color:$brandColor;
+        }
+    }
+}
+
+.foot-contact {
+    li {
+        position: relative;
+        padding-left:30px;
+        margin-bottom: 15px; 
+    }
+       
+    .contact-icon {
+        width: 30px;
+        position: absolute;
+        top:0;
+        left:0;
+        color:$brandColor; 
+
+        .fa-phone {
+            transform: rotate(130deg);
+            margin-top: 9px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color:white;
+        transition:all .3s;
+        &:hover {
+            color:$brandColor;
+        }
+
+        small {
+            display: block;
+
+        }
+        span {
+            display: block;
+        }
+    }
+}
+
+.bottom-footer {
+    background-color: $sitePurple;
+    padding: 15px 0;
+    .copyright {
+        font-size: 14px;
+        color: white;
+    }
+}
+
 /*------------------------------------*\
     RESPONSIVE
 \*------------------------------------*/
