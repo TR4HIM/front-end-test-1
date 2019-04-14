@@ -2,12 +2,31 @@
 
 .site-navbar {
     padding: 10px 35px;
+    .col-logo,.col-menu {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .col-logo {
+        width: 15%;
+    }
+    .col-menu {
+        width: 85%;
+    }
+    @media (max-width: 960px) {
+        .col-logo,.col-menu {
+            width: 100%;
+            float: none;
+        }
+    }
 }
 .nav-bar-logo {
     max-width: 200px;
     img {
         max-width: 100%;
     }
+    @media (max-width: 960px) {
+        margin: 15px auto;
+    } 
 }
 
 .top-bar {
@@ -25,12 +44,12 @@
 .site-menu {
     padding: 15px 0;
     ul {
-        overflow: hidden;
+        text-align: right;
     }
     li {
-        float: left;
-        width: ( 100 / 4 ) * 1%;
         text-align: center;
+        display: inline-block;
+        margin-left: 50px;
     } 
     a {
         text-decoration: none;
@@ -42,6 +61,18 @@
         letter-spacing: 1px;
         &:hover, &.active {
             color: $siteOrange;
+        }
+    }
+    @media (max-width: 960px) {
+        ul {
+            text-align: center;
+        }
+        li {
+            text-align: center;
+            margin: 0 10px;
+        } 
+        a { 
+            font-size: 15px;
         }
     }
 }
@@ -107,6 +138,33 @@
         height: 45px;
         font-size: 13px;
     }
+    @media (max-width: 960px) {
+        float: none;
+        max-width: 300px; 
+        margin: 0 auto 15px;
+        width: 100%;
+        input {
+            border-right:1px solid #dadada;
+            border-radius: 5px;
+            width: 100%; 
+        }
+        input[type='text'] {
+            width: 100%;
+        }
+        select {
+            border-right:1px solid #dadada;
+            width: 100%;
+        }
+        &.select-date {  
+            select {
+                width: 100%;
+            }
+        }
+        button {
+            border-radius: 5px;
+            width: 100%;
+        }
+    }
 }
 .filter-link {
     padding: 0 15px;
@@ -118,6 +176,10 @@
         text-decoration: none;
         height: 45px;
         line-height: 45px;
+    }
+    @media (max-width: 960px) {
+        text-align: center;
+        margin-bottom: 0;
     }
 }
 /*  Site Hero */
@@ -148,8 +210,10 @@
         font-size: 50px;
         text-transform: uppercase;
         margin-bottom: 40px;
+        @media (max-width: 960px) {
+            font-size: 38px;
+        }
     }
-
 }
 /* Section Blocks */
 
@@ -165,7 +229,7 @@
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 960px) {
         .group {
             display: block;
         }
@@ -242,6 +306,10 @@
         font-weight: bold;
         color:$brandColor;
     }
+    @media (max-width: 960px) {
+        text-align: center;
+        margin-bottom: 15px; 
+    }
 }
 .subscribe-form {
     form {
@@ -269,15 +337,14 @@
     }
 }
 /* Footer Styels */
-
-.site-footer {
-
-}
-
 .container-footer {
     position: relative;
     padding-left: 100px;
     padding-right: 100px;
+    @media (max-width: 960px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    } 
 }
 
 .top-footer {
@@ -297,12 +364,17 @@
         top:0;
         content:"";
     }
-    
+    @media (max-width: 960px) {
+        padding: 50px 0 30px;
+    } 
 }
 
 .foot-title {
     color:white;
     margin-bottom: 35px;
+    @media (max-width: 960px) {
+        margin-bottom: 25px;
+    }
 }
  
 .foot-social {
@@ -328,7 +400,9 @@
             }
         }
     }
-
+    @media (max-width: 960px) {
+        margin-bottom: 25px;
+    }
 
 }
 
@@ -345,6 +419,9 @@
         &:hover {
             color:$brandColor;
         }
+    }
+    @media (max-width: 960px) {
+        margin-bottom: 25px;
     }
 }
 
@@ -384,6 +461,7 @@
             display: block;
         }
     }
+
 }
 
 .bottom-footer {
@@ -393,29 +471,7 @@
         font-size: 14px;
         color: white;
     }
+    @media (max-width: 960px) {
+        text-align: center;
+    } 
 }
-
-/*------------------------------------*\
-    RESPONSIVE
-\*------------------------------------*/
-
-@media only screen and (min-width:320px) {}
-
-@media only screen and (min-width:480px) {}
-
-@media only screen and (min-width:768px) {}
-
-@media only screen and (min-width:1024px) {}
-
-@media only screen and (min-width:1140px) {}
-
-@media only screen and (min-width:1280px) {}
-
-@media only screen and (-webkit-min-device-pixel-ratio:1.5),
-only screen and (min-resolution:144dpi) {}
-
-
-
-
-
-@media only screen and (max-width:960px) {}
