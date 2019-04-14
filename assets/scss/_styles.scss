@@ -1,3 +1,66 @@
+/* Section Blocks */
+
+.section-img-text {
+    .group {
+        display: flex;
+    }
+}
+
+.sec-img-block {
+    background-color: #000; 
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100%;
+    img {
+        visibility: hidden;
+    }
+}
+
+.sec-text-block { 
+    padding: 70px 30px 30px;
+    .block-content {
+        max-width: 520px;
+        width: 100%;
+        margin: 0 auto 40px;
+        p {
+
+        }
+    }
+}
+
+.sec-icon-title {
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 70px;
+    margin-bottom: 20px;
+    max-width: 400px;
+    min-height: 65px;
+    .title-icon {
+        position: absolute;
+        width: 65px;
+        top: 5px;
+        left: 0;
+        img {
+            width: 100%;
+        }
+    }
+    &.title-purple {
+        color : $sitePurple; 
+    }
+    &.title-yellow {
+        color : $siteYellow ;
+    }
+    &.title-orange {
+        color : $siteOrange;
+    }
+    &.title-blue {
+        color : $brandColor;
+    }
+}
+
+
+
 
 /* Subscribe Section */
 
