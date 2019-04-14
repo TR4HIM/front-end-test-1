@@ -10,9 +10,35 @@ img {
   vertical-align: bottom;
 }
 
+h1 {
+  font-size: 44px;
+  font-family: $primaryFont;
+}
 h2 {
   font-size: 32px;
   font-family: $primaryFont;
 }
 
- 
+//  Buttons
+
+.site-btn {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  padding: 11px 40px;
+  border-radius: 30px;
+  color:white;
+  border:1px solid;
+  display: inline-block;
+  &.btn-primary {
+    background-color: $brandColor;
+    border-color: $brandColor;
+    color:white;
+    &:hover { 
+      background-color: rgba(black,0.1);
+      color: $brandColor;
+    }
+  }
+}
