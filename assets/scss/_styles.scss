@@ -1,10 +1,47 @@
 
+/* Subscribe Section */
 
+.subscribe-section {
+    background-color: $siteYellow;
+    padding: 20px 0;
+}
+.subscribe-text {
+    font-size: 22px;
+    color:black;
+    padding-top: 5px;
+    strong {
+        font-weight: bold;
+        color:$brandColor;
+    }
+}
+.subscribe-form {
+    form {
+        overflow: hidden;
+        input {
+            width: 70%;
+            float: left;
+            padding: 11px 10px;
+            box-shadow: none;
+            border:1px solid white;
+            border-radius: 5px 0 0 5px;
+        }
+        button {
+            width: 30%;
+            float:left;
+            padding: 11px;
+            background-color: $brandColor;
+            color:white;
+            box-shadow: none;
+            border:1px solid $brandColor;
+            border-radius: 0 5px 5px 0;
 
+        }
+    }
+}
 /* Footer Styels */
 
 .site-footer {
-    
+
 }
 
 .container-footer {
