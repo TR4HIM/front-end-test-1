@@ -26,6 +26,8 @@ gulp.task('sass', function () {
 	.pipe(browserSync.stream());
 });
 
+
+
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
@@ -47,7 +49,7 @@ gulp.task('build-js',['compress-js']);
 
 gulp.task('watch',['sass','browserSync'],function(){
 	gulp.watch('assets/**/*.scss', ['build-css','browserSync']);
-  gulp.watch('*.html', ['browserSync']);
+  gulp.watch('*.html', browserSync.reload);
 });
 
 gulp.task('default',['watch']);
