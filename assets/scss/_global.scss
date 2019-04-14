@@ -63,3 +63,13 @@ h2 {
     }
   }
 }
+
+.btn-sub {
+  padding: 11px;
+  background-color: $brandColor;
+  color:white;
+  box-shadow: none;
+  border:1px solid $brandColor;
+  border-radius: 0 5px 5px 0;
+  text-transform: uppercase;
+}
