@@ -1,4 +1,50 @@
+/* Site Navbar */
 
+.site-navbar {
+    padding: 10px 35px 15px;
+}
+.nav-bar-logo {
+    max-width: 200px;
+    img {
+        max-width: 100%;
+    }
+}
+
+.top-bar {
+    overflow: hidden;
+    ul {
+        overflow: hidden;
+        float:right;
+    }
+    li {
+        display:  block;
+        float: left;
+    }
+}
+
+.site-menu {
+    padding: 20px 0;
+    ul {
+        overflow: hidden;
+    }
+    li {
+        float: left;
+        width: ( 100 / 4 ) * 1%;
+        text-align: center;
+    } 
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 18px;
+        transition: all .3s;
+        color:black;
+        font-weight: 500;
+        letter-spacing: 1px;
+        &:hover, &.active {
+            color: $siteOrange;
+        }
+    }
+}
 /*  Site Hero */
 .home-hero {
     background-image: url('../images/hero-background.jpg');
