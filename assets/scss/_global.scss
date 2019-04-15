@@ -18,6 +18,10 @@ h2 {
   font-size: 32px;
   font-family: $primaryFont;
 }
+
+input, select {
+  outline: none !important;
+}
 // Site Bages
 .nav-badge {
     background-color: #ffd800;
@@ -43,23 +47,25 @@ h2 {
 //  Buttons
 
 .site-btn {
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
   transition: all .3s;
-  padding: 11px 40px;
+  padding: 12px 40px;
   border-radius: 30px;
   color:white;
   border:1px solid;
   display: inline-block;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   &.btn-primary {
     background-color: $brandColor;
     border-color: $brandColor;
     color:white;
     &:hover { 
-      background-color: rgba(black,0.1);
-      color: $brandColor;
+      background-color: $siteOrange;
+      border-color: $siteOrange;
     }
   }
 }
@@ -72,4 +78,8 @@ h2 {
   border:1px solid $brandColor;
   border-radius: 0 5px 5px 0;
   text-transform: uppercase;
+  &:hover { 
+    background-color: $siteOrange;
+    border-color: $siteOrange;
+  }
 }

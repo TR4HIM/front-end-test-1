@@ -54,10 +54,10 @@
     a {
         text-decoration: none;
         text-transform: uppercase;
-        font-size: 18px;
+        font-size: 16px;
         transition: all .3s;
         color:black;
-        font-weight: 500;
+        font-weight: 600;
         letter-spacing: 1px;
         &:hover, &.active {
             color: $siteOrange;
@@ -83,7 +83,9 @@
 }
 .form-container {
     overflow: hidden;
-    padding: 30px 0;
+    padding: 15px 0;
+    max-width: 1095px;
+    margin: 0 auto;
 }
 .filter-input {
     display: block;
@@ -136,7 +138,9 @@
     button {
         padding: 14px 40px;
         height: 45px;
-        font-size: 13px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 1px;
     }
     @media (max-width: 960px) {
         float: none;
@@ -164,7 +168,7 @@
             border-radius: 5px;
             width: 100%;
         }
-    }
+    } 
 }
 .filter-link {
     padding: 0 15px;
@@ -176,6 +180,17 @@
         text-decoration: none;
         height: 45px;
         line-height: 45px;
+        transition:all .3s;
+
+        &:hover, &.active {
+            color: $siteOrange;
+        }
+        span {
+            font-size: 23px;
+            vertical-align: bottom;
+            margin: 0;
+            padding: 0;
+        }
     }
     @media (max-width: 960px) {
         text-align: center;
@@ -198,7 +213,7 @@
         height: 100%;
         left:0;
         top:0;
-        background-color: rgba(black,.3);
+        background-color: rgba(black,.1);
         content:'';
     }
 }
@@ -210,6 +225,7 @@
         font-size: 50px;
         text-transform: uppercase;
         margin-bottom: 40px;
+        letter-spacing: 2px;
         @media (max-width: 960px) {
             font-size: 38px;
         }
@@ -240,6 +256,7 @@
     background-color: #000; 
     background-repeat: no-repeat; 
     background-size:cover;
+    background-position: center;
     height: 100%;
     img {
         visibility: hidden;
@@ -253,7 +270,8 @@
         width: 100%;
         margin: 0 auto 40px;
         p {
-
+            line-height: 22px;
+            font-weight: 500;
         }
     }
 }
@@ -263,7 +281,7 @@
     text-transform: uppercase;
     position: relative;
     padding-left: 70px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     max-width: 400px;
     min-height: 65px;
     .title-icon {
@@ -299,7 +317,7 @@
     padding: 20px 0;
 }
 .subscribe-text {
-    font-size: 22px;
+    font-size: 25px;
     color:black;
     padding-top: 5px;
     strong {
@@ -309,6 +327,7 @@
     @media (max-width: 960px) {
         text-align: center;
         margin-bottom: 15px; 
+        font-size: 22px;
     }
 }
 .subscribe-form {
@@ -332,6 +351,8 @@
             border:1px solid $brandColor;
             border-radius: 0 5px 5px 0;
             text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.5px;
 
         }
     }
